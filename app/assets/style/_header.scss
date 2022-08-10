@@ -1,0 +1,63 @@
+.logo{
+    img{
+        vertical-align:middle;
+        max-width: 80px;
+    }
+    @include phone {
+        margin-top: 16px;
+    }
+}
+header{
+    background: #AA0601;
+}
+.header-title{
+    li:hover{
+        font-size: 22px;
+    }
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            width: 30%;
+        }
+    }
+}
+nav{
+    background: #AA0601;
+}
+.banner{
+    background-image: url(../images/home-header.png);
+    height: 88.5vh;
+    background-size: cover;
+    background-position: center;
+    .text-primary{
+        width: 1296px;
+    }
+    @include ipad {
+        .banner{
+            background-image: url(../images/home-header-sm.png);
+            height: 95.6vh;
+        }
+    }
+    @include phone {
+        .text-primary{
+            .banner-text{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .banner-clear{
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    }
+}
