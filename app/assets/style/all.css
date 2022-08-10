@@ -71,7 +71,7 @@ a {
 }
 
 .italic {
-  font-style: italic;
+  font-family: italic;
 }
 
 .ragular {
@@ -163,8 +163,12 @@ a {
   color: #650300;
 }
 
-.text-info {
+.text-info, .bg-primary {
   color: #AA0601;
+}
+
+.bg-info {
+  background: #FBF2F2;
 }
 
 .regular {
@@ -181,14 +185,6 @@ a {
 
 .fw-black {
   font-weight: 900;
-}
-
-.bg-primary {
-  background: #AA0601;
-}
-
-.bg-info {
-  background: #FBF2F2;
 }
 
 .fz-14 {
@@ -902,8 +898,8 @@ nav {
 }
 
 .functional li {
-  border-left: 1px solid #DCDCDC;
-  border-right: 1px solid #DCDCDC;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
   width: 21.5%;
 }
 
@@ -968,7 +964,7 @@ nav {
 }
 
 .page .page-item {
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #555555;
 }
 

@@ -11,7 +11,7 @@
 }
 
 .italic{
-    font-style: italic;
+    font-family: italic;
 }
 .ragular{
     font-family: "Regular";
@@ -57,19 +57,22 @@
 }
 
 .bg-dark{
-    background: #5F3E2D;
+    background: $bg-dark;
 }
 .bg-light{
-    background: #B75929;
+    background: $bg-light;
 }
 .text-dark{
-    color: white;
+    color: $text-dark;
 }
 .text-primary{
-    color:#650300;
+    color:$text-primary;
 }
-.text-info{
-    color:#AA0601;
+.text-info,.bg-primary{
+    color:$primary;
+}
+.bg-info{
+    background: $bg-info;
 }
 .regular{
     font-weight: 400;
@@ -83,14 +86,6 @@
 .fw-black{
     font-weight: 900;
 }
-
-.bg-primary{
-    background: #AA0601;
-}
-.bg-info{
-    background: #FBF2F2;
-}
-
 
 
 .fz-14{

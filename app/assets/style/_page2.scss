@@ -1,13 +1,13 @@
 .functional{
     li{
-        border-left: 1px solid #DCDCDC;
-        border-right: 1px solid #DCDCDC;
+        border-left: 1px solid $bg-gray;
+        border-right: 1px solid $bg-gray;
         width: 21.5%;
         &:hover{
-            border-bottom: 8px solid #AA0601;
+            border-bottom: 8px solid $primary;
         }
         a{
-            color:black;
+            color:$bg-black;
         }
     }
     @include ipad {
@@ -60,7 +60,7 @@
 
 .page{
     .page-item{
-        background-color: #FFFFFF;
+        background-color: $text-dark;
         border: 1px solid #555555;
         &:hover{
             background: #F2F2F2;

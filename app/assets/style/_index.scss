@@ -110,8 +110,8 @@
         background-image: url(/app/assets/images/home-section4-2.png);
     }
     .design-text{
-        background-color: white;
-        border-right:1px solid gray ;
+        background-color: $text-dark;
+        border-right:1px solid $bg-gray ;
     }
     @include ipad {
         height: 960px;
@@ -125,7 +125,7 @@
             }
         }
         .design-text{
-            border: 1px solid gray;
+            border: 1px solid $bg-gray;
         }
         .design-img{
             width: auto;
