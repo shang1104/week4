@@ -6,3 +6,15 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.container{
+    max-width: 1216px;
+    margin: 0 auto;
+    padding:0 12px;
+    @include ipad {
+        max-width: 90%;
+    }
+    @include phone {
+        max-width: 90%;
+    }
+}

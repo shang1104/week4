@@ -1,3 +1,9 @@
+.banner-buy:hover{
+    border-bottom: 4px solid $text-primary;
+    color: white;
+    background-color: $primary;
+}
+
 .features-txt{
     font-size: 48px;
     line-height: 72px;
@@ -11,18 +17,8 @@
 .features{
     .features-card{
         width: 24%;
-    }
-    .features-title{
-        font-size: 24px;
-        line-height: 36px;
-    }
-    .features-text{
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .features-menu{
         img{
-            width: 83px;
+            width:83px;
         }
     }
     @include ipad{
@@ -92,7 +88,7 @@
 }
 .design{
     height: 608px;
-    background-image: url(/app/assets/images/index-bg.png);
+    background-image: url(../images/index-bg.png);
     background-size: cover;
     background-position: center;
     .design-item{
@@ -104,10 +100,10 @@
         background-position: center;
     }
     .design-img-1{
-        background-image: url(/app/assets/images/home-section4-1.png);
+        background-image: url(../images/home-section4-1.png);
     }
     .design-img-2{
-        background-image: url(/app/assets/images/home-section4-2.png);
+        background-image: url(../images/home-section4-2.png);
     }
     .design-text{
         background-color: $text-dark;
@@ -157,7 +153,7 @@
 }
 .guest-title{
     .guest-item{
-        width: 309px;
+        width: 100%;
         .guest-time{
             color:#707070;
         }
@@ -221,7 +217,9 @@
     height: 136px;
     border:1px solid black;
 }
-.messahr-btn{
+.message-btn{
+    color: $text-dark;
+    cursor: pointer;
     &:hover{
         background: #aa0701a0;
         color:#707070;
