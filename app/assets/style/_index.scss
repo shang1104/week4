@@ -1,227 +1,261 @@
-.banner-buy:hover{
-    border-bottom: 4px solid $text-primary;
-    color: white;
-    background-color: $primary;
-}
-
-.features-txt{
-    font-size: 48px;
-    line-height: 72px;
-    @include phone{
+.banner {
+  background-image: url(../images/home-header.png);
+  height: 88.5vh;
+  background-size: cover;
+  background-position: center;
+  .text-primary {
+    width: 100%;
+  }
+  .banner-buy {
+    color: $text-dark;
+  }
+  @include ipad {
+    .banner {
+      background-image: url(../images/home-header-sm.png);
+      height: 95.6vh;
+    }
+  }
+  @include phone {
+    .text-primary {
+      .banner-text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .banner-clear {
         font-size: 24px;
         line-height: 36px;
-        padding-top: 40px;
+      }
     }
+  }
 }
 
-.features{
-    .features-card{
-        width: 24%;
-        img{
-            width:83px;
-        }
-    }
-    @include ipad{
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .features-card{
-            width: 38%;
-        }
-        .features-menu{
-            margin-bottom: 5%;
-        }
-        
-    }
-    @include phone{
-        align-items: center;
-        flex-direction: column;
-        .features-card{
-            width: 90%;
-        }
-    }
+.banner-buy:hover {
+  opacity: 0.8;
+  border-bottom: 4px solid $text-primary;
+  color: white;
+  background-color: $primary;
 }
 
-.frame-txt{
-    @include ipad{
-        margin-bottom: 24px;
-        font-size: 24px;
-        line-height: 36px;
+.features-txt {
+  font-size: 48px;
+  line-height: 72px;
+  @include phone {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 40px;
+  }
+}
 
+.features {
+  .features-card {
+    width: 24%;
+    img {
+      width: 83px;
     }
-    @include phone{
-        margin-bottom: 24px;
-        font-size: 24px;
-        line-height: 36px;
+  }
+  @include ipad {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .features-card {
+      width: 38%;
     }
-    
+    .features-menu {
+      margin-bottom: 5%;
+    }
+  }
+  @include phone {
+    align-items: center;
+    flex-direction: column;
+    .features-card {
+      width: 90%;
+    }
+  }
 }
-.frame-title{
-    .frame-item{
-        width: 33.33333%;
-        margin-bottom: 80px;
-    }
-    img{
-        max-width: 100%;
-        margin-bottom: 8px;
-    }
-    @include ipad {
-        flex-direction: column;
-    }
-    @include phone {
-        margin-bottom: 8px;
-        .frame-item{
-            width: 100%;
-            margin-bottom: 24px;
-        }
-        .frame-text{
-            font-size: 32px;
-            text-align: center;
-        }
-    }
+
+.frame-txt {
+  @include ipad {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  @include phone {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
-.design-txt{
-    @include phone {
-        font-size: 24px;
-        padding-top:40px;
-        padding-bottom: 24px;
+.frame-title {
+  .frame-item {
+    width: 33.33333%;
+    margin-bottom: 80px;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+  @include ipad {
+    flex-direction: column;
+  }
+  @include phone {
+    margin-bottom: 8px;
+    .frame-item {
+      width: 100%;
+      margin-bottom: 24px;
     }
+    .frame-text {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
 }
-.design{
-    height: 608px;
-    background-image: url(../images/index-bg.png);
+.design-txt {
+  @include phone {
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+}
+.design {
+  height: 608px;
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-position: center;
+  .design-item {
+    width: 100%;
+  }
+  .design-img {
+    height: 240px;
     background-size: cover;
     background-position: center;
-    .design-item{
-        width: 100%;
+  }
+  .design-img-1 {
+    background-image: url(../images/home-section4-1.png);
+  }
+  .design-img-2 {
+    background-image: url(../images/home-section4-2.png);
+  }
+  .design-text {
+    background-color: $text-dark;
+    border-right: 1px solid $bg-gray;
+  }
+  @include ipad {
+    height: 960px;
+    background-image: url(../images/index-bg-md.png);
+    .design-title {
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 80px;
+      .design-item {
+        margin-bottom: 24px;
+      }
     }
-    .design-img{
-        height: 240px;
-        background-size: cover;
-        background-position: center;
+    .design-text {
+      border: 1px solid $bg-gray;
     }
-    .design-img-1{
-        background-image: url(../images/home-section4-1.png);
+    .design-img {
+      width: auto;
+      height: 240px;
     }
-    .design-img-2{
-        background-image: url(../images/home-section4-2.png);
+  }
+  @include phone {
+    height: 820px;
+    .design-title {
+      margin-bottom: 40px;
     }
-    .design-text{
-        background-color: $text-dark;
-        border-right:1px solid $bg-gray ;
+    .design-img-1 {
+      background-image: url(../images/home-section4-1-sm.png);
     }
-    @include ipad {
-        height: 960px;
-        background-image: url(/app/assets/images/index-bg-md.png);
-        .design-title{
-            align-items: center;
-            flex-direction: column;
-            padding-bottom: 80px;
-            .design-item{
-                margin-bottom: 24px;
-            }
-        }
-        .design-text{
-            border: 1px solid $bg-gray;
-        }
-        .design-img{
-            width: auto;
-            height: 240px;
-        }
+    .design-img-2 {
+      background-image: url(../images/home-section4-2-sm.png);
     }
-    @include phone {
-        height: 820px;
-        .design-title{
-            margin-bottom: 40px;
-        }
-        .design-img-1{
-            background-image: url(/app/assets/images/home-section4-1-sm.png);
-        }
-        .design-img-2{
-            background-image: url(/app/assets/images/home-section4-2-sm.png);
-        }
-        .design-text{
-            font-size: 24px;
-            line-height: 36px;
-        } 
+    .design-text {
+      font-size: 24px;
+      line-height: 36px;
     }
+  }
 }
 
-.guest-txt{
-    @include phone {
-        font-size: 24px;
-    }
+.guest-txt {
+  @include phone {
+    font-size: 24px;
+  }
 }
-.guest-title{
-    .guest-item{
-        width: 100%;
-        .guest-time{
-            color:#707070;
-        }
+.guest-title {
+  .guest-item {
+    width: 100%;
+    .guest-time {
+      color: #707070;
     }
-    img{
-        max-width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+  .guest-body {
+    border-radius: 0 0 2px 2px;
+    border: 1px solid #dee2e6;
+  }
+  @include ipad {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .guest-item {
+      margin-bottom: 24px;
+      .guest-text {
+        margin-right: 16px;
+      }
     }
-    .guest-body{
-        border-radius: 0 0 2px 2px;
-        border: 1px solid #DEE2E6;
+  }
+  @include phone {
+    .guest-item {
+      margin-bottom: 16px;
     }
-    @include ipad {      
-        flex-wrap: wrap;
-        justify-content:space-around;
-        .guest-item{
-            margin-bottom: 24px;
-            .guest-text{
-                margin-right: 16px;
-            }
-        }
-    }
-    @include phone {
-        .guest-item{
-            margin-bottom: 16px;
-        }
-    }
+  }
 }
 
-.message{
-    margin: 0 auto;
-    width: 48%;
-    @include ipad {
-        width: 83.4%;
+.message {
+  margin: 0 auto;
+  width: 48%;
+  @include ipad {
+    width: 83.4%;
+  }
+  @include phone {
+    .message {
+      width: 90%;
+      padding-bottom: 40px;
     }
-    @include phone {
-        .message{
-            width: 90%;
-            padding-bottom: 40px;
-        }
-        .message-title{
-            font-size: 16px;
-            line-height: 24px;
-        }
-        .message-check{
-            margin-bottom: 24px;
-        }
+    .message-title {
+      font-size: 16px;
+      line-height: 24px;
     }
-}
-.message-name,.message-phone,.message-mail,.message-complaint{
-    display: block;
-}
-.message-input,.message-number,.message-mail-number{
-    width: 100%;
-    height: 36px;
-    color:#707070;
-    border:1px solid black;
-}
-.message-complaint-input{
-    width: 100%;
-    color:#707070;
-    height: 136px;
-    border:1px solid black;
-}
-.message-btn{
-    color: $text-dark;
-    cursor: pointer;
-    &:hover{
-        background: #aa0701a0;
-        color:#707070;
+    .message-check {
+      margin-bottom: 24px;
     }
+  }
+}
+.message-name,
+.message-phone,
+.message-mail,
+.message-complaint {
+  display: block;
+}
+.message-input,
+.message-number,
+.message-mail-number {
+  width: 100%;
+  height: 36px;
+  color: #707070;
+  border: 1px solid black;
+}
+.message-complaint-input {
+  width: 100%;
+  color: #707070;
+  height: 136px;
+  border: 1px solid black;
+}
+.message-btn {
+  color: $text-dark;
+  cursor: pointer;
+  &:hover {
+    background: #aa0701a0;
+    color: #707070;
+  }
 }

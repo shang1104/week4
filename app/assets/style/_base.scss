@@ -1,20 +1,21 @@
 body {
-	line-height: 1;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.container{
-    max-width: 1216px;
-    margin: 0 auto;
-    padding:0 12px;
-    @include ipad {
-        max-width: 90%;
-    }
-    @include phone {
-        max-width: 90%;
-    }
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @include ipad {
+    max-width: 90%;
+  }
+  @include phone {
+    max-width: 90%;
+  }
 }
