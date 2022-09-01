@@ -1,11 +1,9 @@
 .banner {
+  width: 100%;
   background-image: url(../images/home-header.png);
   height: 88.5vh;
   background-size: cover;
   background-position: center;
-  .text-primary {
-    width: 100%;
-  }
   .banner-buy {
     color: $text-dark;
   }
